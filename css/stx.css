@@ -85,6 +85,7 @@ hr {
     position: relative;
     overflow: hidden;
     font-size: 16px;
+    border-radius: 6px;
   }
   
   .btn1 {
