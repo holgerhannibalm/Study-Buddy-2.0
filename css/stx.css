@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+} 
+
+html {
+    background: url("../images/stx-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: Georgia, serif;
+    width: inherit;
+}
+
+.box {
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    top: 45%;
+    left: 71%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        background: url("../images/stxMobile-background.jpg");
+    }
+
+    .box {
+        width: 85%;
+        height: 85%;
+        top: 50%;
+        left: 50%;
+
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+span {
+    color: #FFBF00;
+}
+
+#header {
+    text-align: center;
+    font-weight: 900;
+}
+
+#manchet {
+    font-size: 120%;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #FFBF00; /* old IE */
+    background-color: #FFBF00; /* Modern Browsers */
+}
+
+.container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn {
+    border: 1px solid #FFBF00;
+    background: none;
+    padding: 15px 32px;
+    cursor: pointer;
+    margin: 1px;
+    width: 12vw;
+    transition: 0.35s;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  
+  .btn1 {
+    color: #5b9cf2;
+  }
+  
+  .btn1:hover {
+    color: #000000;
+    font-weight: 900;
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    height: 0%;
+    width: 30vw;
+    background: #FFBF00;
+    z-index: -1;
+    transition: 0.35s;
+  }
+  
+  .btn1:before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 180%;
+  }
+  
+  .btn:hover::before {
+    height: 0%;
+  }
+
+@media screen and (max-width:1200px) {
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .btn {
+        padding: 7px 14px;
+    }
+}
+
+@media screen and (max-width:999px) {
+    .btn {
+        padding: 15px 32px;
+        width: 18vw;
+    }
+}
+
+@media screen and (max-width:915px){
+    .btn {
+        padding: 10px 20px;
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width:885px){
+    .box {
+        width: 70%;
+    }
+    .btn {
+        width: 20vw;
+        height: 20vh;
+        font-size: 130%;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .btn {
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .btn {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .btn {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .btn {
+        font-size: 75%;
+    }
+}
